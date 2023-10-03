@@ -1,0 +1,187 @@
+.body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url(../img/bg.jpg);
+  background-size: 100% 100%;
+}
+
+.body nav .container-fluid .collapse ul li a {
+  color: white;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.body nav .container-fluid .collapse ul li .active {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #3f87a6), color-stop(#b6956f), color-stop(75%, #a0bd41));
+  background: linear-gradient(to right, #3f87a6 30%, #b6956f, #a0bd41 75%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.body .home .homepage {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .home .homepage .col-4 img {
+  height: 70vh;
+  /* 
+                    box-shadow: -5px -5px 5px rgba(172, 168, 168, 0.05),
+                        5px 5px 5px rgba(190, 190, 190, 0.26),
+                        inset -1px -1px 1px rgba(187, 183, 183, 0.2),
+                        inset 1px 1px 1px rgba(0, 0, 0, 0.1); */
+}
+
+.body .home .homepage .col-8 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.body .home .homepage .col-8 h1 {
+  font-size: 5rem;
+}
+
+.body .home .homepage .col-8 p {
+  font-size: 3rem;
+}
+
+.body .home .homepage .col-8 .d-flex a {
+  color: white;
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+.body .contact {
+  color: white;
+}
+
+.body .contact .contactpage {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.body .contact .contactpage .map .small {
+  display: none;
+}
+
+.body .contact .contactpage .map .normal {
+  display: block;
+}
+
+.body .about {
+  color: white;
+}
+
+.body .about .aboutpage {
+  margin: 0;
+}
+
+.body .portfolio .row .col {
+  height: 150px;
+}
+
+@media (max-width: 992px) {
+  .home .homepage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .homepage .col-4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home .homepage .col-4 img {
+    height: 50vh;
+  }
+  .home .homepage .col-8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    text-align: center;
+  }
+  .home .homepage .col-8 h1 {
+    font-size: 5rem;
+    -webkit-transform: scaleX(0.7);
+            transform: scaleX(0.7);
+  }
+  .home .homepage .col-8 p {
+    font-size: 3rem;
+  }
+  .home .homepage .col-8 .d-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home .homepage .col-8 .d-flex a {
+    color: white;
+    font-size: 3rem;
+    margin: 2rem;
+  }
+  .contact {
+    color: white;
+  }
+  .contact .contactpage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+  }
+  .contact .contactpage .map {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact .contactpage .map .small {
+    display: block !important;
+  }
+  .contact .contactpage .map .normal {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

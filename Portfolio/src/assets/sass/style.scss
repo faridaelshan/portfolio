@@ -1,0 +1,164 @@
+.body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background: url(../img/bg.jpg);
+    background-size: 100% 100%;
+
+    nav {
+        .container-fluid {
+            .collapse {
+                ul {
+                    li {
+                        a {
+                            color: white;
+                            font-size: 1.7rem;
+                            font-weight: 700;
+                        }
+
+                        .active {
+                            background: linear-gradient(to right, #3f87a6 30%, #b6956f, #a0bd41 75%);
+                            -webkit-text-fill-color: transparent;
+                            -webkit-background-clip: text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home {
+        .homepage {
+            margin: 0;
+            display: flex;
+            .col-4 {
+                img {
+                    height: 70vh;/* 
+                    box-shadow: -5px -5px 5px rgba(172, 168, 168, 0.05),
+                        5px 5px 5px rgba(190, 190, 190, 0.26),
+                        inset -1px -1px 1px rgba(187, 183, 183, 0.2),
+                        inset 1px 1px 1px rgba(0, 0, 0, 0.1); */
+                }
+            }
+
+            .col-8 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+
+                h1 {
+                    font-size: 5rem;
+                }
+
+                p {
+                    font-size: 3rem;
+                }
+
+                .d-flex {
+                    a {
+                        color: white;
+                        font-size: 3rem;
+                        margin: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        color: white;
+
+        .contactpage {
+            margin: 0;
+            display: flex;
+            .map{
+                .small{
+                    display: none;
+                }
+                .normal{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .about {
+        color: white;
+
+        .aboutpage {
+            margin: 0;
+        }
+    }
+
+    .portfolio {
+        .row{
+            .col{
+                height: 150px;
+            }
+        }
+    }
+}
+@media (max-width: 992px){
+    .home {
+        .homepage {
+            display: flex;
+            margin: 0;
+            flex-direction: column-reverse;
+            align-items: center;
+            .col-4 {
+                display: flex;
+                justify-content: center;
+                img {
+                    height: 50vh;
+                }
+            }
+
+            .col-8 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                text-align: center;
+
+                h1 {
+                    font-size: 5rem;
+                    transform: scaleX(0.7);
+                }
+
+                p {
+                    font-size: 3rem;
+                }
+
+                .d-flex {
+                    display: flex;
+                    a {
+                        color: white;
+                        font-size: 3rem;
+                        margin: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    .contact {
+        color: white;
+
+        .contactpage {
+            flex-direction: column-reverse;
+            align-items: center;
+            margin: 0;
+            .map{
+                display: flex;
+                justify-content: center;
+                .small{
+                    display: block !important;
+                }
+                .normal{
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
